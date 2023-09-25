@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create logo "sa bi chuong" </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 class="logo">Logo<br>Sa Bi Chuong</h1>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Address</a>
+    </nav>
+</header>
+<main>
+    <nav class="listIntroduce">
+        <h2 class="menu">Menu</h2>
+        <ul>
+            <li>Reasons to choose logo design theme?</li>
+            <li>History and development of "suon bi cha"?</li>
+            <li>Inspiration for logo design</li>
+            <li>Style of logo</li>
+            <li>Mood board</li>
+        </ul>
+    </nav>
+
+    <nav class="bd">
+        <nav class="reason">
+        <h3>Reasons to choose logo design theme?</h3>
+        <p>The topic was chosen because of its development potential and appeal in the current market.</p>
+        <img src="#">
+    </nav>
+
+    <nav class="History">
+        <h3>History and development of "suon bi cha"</h3>
+        <img src="img1.png" width="300" height="300">
+        <p>On <b>June 18, 2021</b>, already intending to do business and impressed with broken rice,<br>
+            the 'Three Kings' extremely famous streamers in the gaming industry including Do <b>Mixi</b>,<br>
+            <b>Xemesis</b>, and <b>PewPew</b> jointly opened a broken rice restaurant named <b>Sa Bi Chuong</b>.<br>
+            The three brothers' restaurant was officially opened for online sales on ordering apps.
+        </p>
+    </nav>
+
+    <nav class="imspiration">
+        <h3>Inspiration for logo design</h3>
+        <p><img src="#">img not successful</p>
+        <p>Inspired by popular dishes produced directly at the restaurant.</p>
+    </nav>
+
+    <nav class="style">
+        <h3>Style of logo</h3>
+        <p>Styled as a set of icons for traditional dishes. With minimalist lines but still highlighting the characteristics of each dish.</p>
+    </nav>
+
+    <nav>
+        <h3>Mood board</h3>
+        <div class="white"> white</div>
+        <div class="yellow">yellow</div>
+        <div class="brown">brown</div>
+    </nav>
+    </nav>
+</main>
+
+<footer>
+    <h2>Contact: 0354081106</h2>
+    <h2>Mail <a href=mailto:hoantlse171786@fpt.edu.vn>hoantlse171786@fpt.edu.vn</a></h2>
+</footer>
+</body>
+<script>
+
+  const logo = document.querySelector('.logo');
+
+
+  function changeLogoSize() {
+
+    const scale = 1 + Math.sin(Date.now() / 1000) * 0.1;
+    logo.style.transform = `scale(${scale})`;
+  }
+
+
+  setInterval(changeLogoSize, 1000);
+</script>
+</html>

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: bisque;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header .logo {
+    font-size: 2em;
+    user-select: none;
+    color: saddlebrown;
+    transform-origin: center;
+    transition: transform 1s ease;
+  }
+
+.navigation a{
+    position:relative;
+    font-size: 1.5em;
+    color: saddlebrown;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.navigation a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: saddlebrown;
+    left: 0;
+    bottom: -6px;
+    transform: scale(0);
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scale(1);
+}
+main{
+    position: relative;
+    top: 110px;
+    padding-top: 50px;
+}
+main .listIntroduce{
+    position: absolute;
+    border:3px solid black;
+    left: 35%;
+    padding: 50px 50px;
+}
+main .menu{
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    color: rgba(240,108,0,0.64);
+}
+
+main li{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.bd{
+    position: absolute;
+    top: 600px;
+    margin-left: 50px;
+}
+
+.bd h3{
+    font-size: 140%;
+    margin-top: 50px;
+    color: saddlebrown;
+}
+.bd p{
+    font-size: 130%;
+    margin-top: 20px;
+}
+
+.white{
+
+    background: white;
+    border: 3px solid white;
+    position: absolute;
+    border-radius: 100%;
+    color: white;
+    padding: 20px;
+}
+
+.yellow{
+    background: yellow;
+    border: 3px solid yellow;
+    position: absolute;
+    border-radius: 100%;
+    color: yellow;
+    padding: 20px;
+    left: 100px;
+}
+
+.brown{
+    background: saddlebrown;
+    border: 3px solid saddlebrown;
+    position: absolute;
+    border-radius: 100%;
+    color: saddlebrown;
+    padding: 20px;
+    left: 200px;
+}
+
+footer{
+    position: absolute;
+    top: 2000px;
+    color: red;
+}
+img{
+    margin-left: 500px;
+}
